@@ -1,0 +1,37 @@
+# Archivos y carpetas generados automáticamente por Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Archivos temporales y de compilación
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Archivos grandes de Addressables
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Archivos de memoria y grabaciones
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Builds y paquetes
+*.apk
+*.aab
+*.unitypackage
