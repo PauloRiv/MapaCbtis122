@@ -6,6 +6,12 @@ public class CameraController : MonoBehaviour
     public Camera mainCamera;
     public float panSpeed = 0.5f;
 
+    // Límites para el movimiento de la cámara
+    public float minX = -10f;
+    public float maxX = 10f;
+    public float minY = -5f;
+    public float maxY = 5f;
+
     private InputAction panAction;
 
     void Awake()
@@ -34,7 +40,14 @@ public class CameraController : MonoBehaviour
         {
             // Aplicar el movimiento a la cámara
             Vector3 direction = new Vector3(-panDelta.x, -panDelta.y, 0) * panSpeed * Time.deltaTime;
-            mainCamera.transform.position += direction;
+            Vector3 newPosition = mainCamera.transform.position + direction;
+
+            // Aplicar límites al movimiento
+            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
+            newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
+
+            // Actualizar la posición de la cámara
+            mainCamera.transform.position = newPosition;
         }
     }
 

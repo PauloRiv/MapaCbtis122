@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78cd422e5b5503144b4167bd84886920
+guid: 9082377a1b156954ba48e1b6d355225a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,10 +116,10 @@ TextureImporter:
       name: bookmark_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 16
-        height: 16
+        width: 40
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
