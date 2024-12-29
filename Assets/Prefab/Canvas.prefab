@@ -606,6 +606,7 @@ GameObject:
   - component: {fileID: 151881387289881547}
   - component: {fileID: 8832352518638266398}
   - component: {fileID: 4218266321866201143}
+  - component: {fileID: 5223421173169688965}
   m_Layer: 5
   m_Name: CbtisIcon
   m_TagString: Untagged
@@ -714,7 +715,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8832352518638266398}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5223421173169688965}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Map
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5223421173169688965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327030968941092013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7a8945ddb8adf4b912e49e0f28425a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5935509168915488240
 GameObject:
   m_ObjectHideFlags: 0
