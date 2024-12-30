@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LabComputo.unity
     guid: 7fe179e9a148baa468ca026f77689789
+  - enabled: 1
+    path: Assets/Scenes/Teachers.unity
+    guid: 8ed7b323865901a439b1b91185090744
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: e26b5047501a35f41983af6549eff1c2, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d3bcade158d03a145a16c52355ee3545, type: 2}

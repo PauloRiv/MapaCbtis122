@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     // Método público que se llama desde el botón
-    public void ChangeScene()
+    public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene("Map");
+        SceneManager.LoadScene(sceneName);
     }
 }
