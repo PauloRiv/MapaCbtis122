@@ -1,0 +1,42 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class PageManager : MonoBehaviour
+{
+    public TextMeshProUGUI nameText; // Referencia al texto del título
+    public TextMeshProUGUI infoText; // Referencia al texto principal
+    public Image teacherImage; // Referencia a la imagen principal
+
+    // Datos de ejemplo para diferentes páginas
+    private string[] pageNames = { "Raúl Alberto Toledo Pi%ón", "Página 2", "Página 3" };
+    private string[] pageInfos = {
+        "El profesor Toledo imparte materias didácticas y enfocadas a la programación, como las cuales son: Cultura Digital, Aplicación Web y Desarrollo de Aplicación Web",
+        "Contenido de la página 2.",
+        "Contenido de la página 3."
+    };
+
+    [SerializeField] private Sprite[] pageImages; // Aquí puedes asignar imágenes desde el Inspector
+
+    void Start()
+    {
+        // Recuperar el índice de la página seleccionada
+        int selectedPage = PlayerPrefs.GetInt("SelectedPage", 0); // Valor predeterminado: 0
+
+        // Llamar al método para cargar la página correspondiente
+        LoadPage(selectedPage);
+    }
+    public void LoadPage(int pageIndex)
+    {
+        // Validar índice
+        if (pageIndex < 0 || pageIndex >= pageNames.Length) return;
+
+        // Actualizar contenido
+        nameText.text = pageNames[pageIndex];
+        infoText.text = pageInfos[pageIndex];
+        if (pageImages != null && pageIndex < pageImages.Length)
+        {
+            teacherImage.sprite = pageImages[pageIndex];
+        }
+    }
+}
