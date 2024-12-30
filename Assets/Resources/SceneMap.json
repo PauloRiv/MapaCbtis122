@@ -1,0 +1,7 @@
+{
+    "mappings": [
+        { "keyword": "inicio", "sceneName": "Map" },
+        { "keyword": "nivel1", "sceneName": "LabComputo" },
+        { "keyword": "opciones", "sceneName": "Teachers" },
+    ]
+}
