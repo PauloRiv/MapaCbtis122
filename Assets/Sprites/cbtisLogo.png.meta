@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cbtisLogo_0: 5436093519181524089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

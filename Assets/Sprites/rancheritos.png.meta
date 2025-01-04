@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rancheritos_0: -89009088095785043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

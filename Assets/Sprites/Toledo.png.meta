@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Toledo_0: -9091499458105894141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

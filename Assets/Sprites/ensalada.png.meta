@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ensalada_0: 5061261413104149843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
