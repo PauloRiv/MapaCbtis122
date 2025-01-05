@@ -7,6 +7,7 @@ public class PageManager : MonoBehaviour
     public TextMeshProUGUI nameText; // Referencia al texto del título
     public TextMeshProUGUI infoText; // Referencia al texto principal
     public Image teacherImage; // Referencia a la imagen principal
+    public Image teacherTable;
 
     // Datos de ejemplo para diferentes páginas
     private string[] pageNames = { "Raúl Alberto Toledo Pi%ón", "Página 2", "Página 3" };
@@ -16,7 +17,8 @@ public class PageManager : MonoBehaviour
         "Contenido de la página 3."
     };
 
-    [SerializeField] private Sprite[] pageImages; // Aquí puedes asignar imágenes desde el Inspector
+    [SerializeField] private Sprite[] pageImages;
+    [SerializeField] private Sprite[] pageTable;
 
     void Start()
     {
@@ -37,6 +39,7 @@ public class PageManager : MonoBehaviour
         if (pageImages != null && pageIndex < pageImages.Length)
         {
             teacherImage.sprite = pageImages[pageIndex];
+            teacherTable.sprite = pageTable[pageIndex];
         }
     }
 }
