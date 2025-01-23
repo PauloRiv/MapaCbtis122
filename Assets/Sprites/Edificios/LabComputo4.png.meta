@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67ac9fc2929f2ca458af1672c3c0e6a7
+guid: af44fddfc9924e84bb6cb65d69991776
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5875038362160349911
-    second: lobby_0
+      213: -3229390057465807521
+    second: LabComputo4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lobby_0
+      name: LabComputo4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1600
-        height: 1066
+        width: 1200
+        height: 1600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d24c5a5344588150800000000000000
-      internalID: 5875038362160349911
+      spriteID: f5d729f4ad6ee23d0800000000000000
+      internalID: -3229390057465807521
       vertices: []
       indices: 
       edges: []
