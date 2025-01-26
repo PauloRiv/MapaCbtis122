@@ -68,7 +68,7 @@ PlayerSettings:
   preserveFramebufferAlpha: 0
   disableDepthAndStencilBuffers: 0
   androidStartInFullscreen: 1
-  androidRenderOutsideSafeArea: 1
+  androidRenderOutsideSafeArea: 0
   androidUseSwappy: 1
   androidBlitType: 2
   androidResizeableActivity: 1
@@ -143,9 +143,6 @@ PlayerSettings:
   bundleVersion: 1.0.2
   preloadedAssets:
   - {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  - {fileID: 11400000, guid: 5cf5b23afd83ec54e91ff15f7b9dc01f, type: 2}
-  - {fileID: 11400000, guid: e26b5047501a35f41983af6549eff1c2, type: 2}
-  - {fileID: 3939336672332395811, guid: d3bcade158d03a145a16c52355ee3545, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

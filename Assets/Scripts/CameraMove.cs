@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CameraController : MonoBehaviour
+public class CameraMove: MonoBehaviour
 {
     public Camera mainCamera;
     public float panSpeed = 0.5f;

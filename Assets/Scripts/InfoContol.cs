@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class PageManager : MonoBehaviour
+public class InfoControl : MonoBehaviour
 {
     public TextMeshProUGUI nameText; // Referencia al texto del título
     public TextMeshProUGUI infoText; // Referencia al texto principal

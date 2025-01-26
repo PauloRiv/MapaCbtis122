@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class ChangeSceneButton : MonoBehaviour
 {
     // Método público que se llama desde el botón
     public void ChangeScene(string sceneName)

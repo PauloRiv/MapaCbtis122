@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonHandler : MonoBehaviour
+public class ButtonTeacher : MonoBehaviour
 {
     public int pageIndex; // Índice de la página asociada a este botón
 
