@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4884c5c289d8747489cdde05fb1a4750
+guid: 66807a8326d511744b3fe1846bbdb3dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4820742124852407542
-    second: click_0
+      213: -7124299397696932828
+    second: LabIdiomas_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: click_0
+      name: LabIdiomas_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 35
-        height: 48
+        width: 1280
+        height: 963
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fce691db67b6e240800000000000000
-      internalID: 4820742124852407542
+      spriteID: 424beb6a177612d90800000000000000
+      internalID: -7124299397696932828
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      click_0: 4820742124852407542
+      LabIdiomas_0: -7124299397696932828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

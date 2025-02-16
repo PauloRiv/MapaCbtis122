@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 057e7f205837d2d4bb9fd85d7c658b3f
+guid: 3e12bd08ececdf5468c423cba5961bb2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3451464002159439232
-    second: LabComputoMS_0
+      213: 833336693950361472
+    second: LabMicrosoft_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,11 +109,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LabComputoMS_0
+      name: LabMicrosoft_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0821d34d6cfe910d0800000000000000
-      internalID: -3451464002159439232
+      spriteID: 08fa535de4b909b00800000000000000
+      internalID: 833336693950361472
       vertices: []
       indices: 
       edges: []
@@ -147,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LabMicrosoft_0: 833336693950361472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
