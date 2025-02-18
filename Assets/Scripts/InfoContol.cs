@@ -10,11 +10,11 @@ public class InfoControl : MonoBehaviour
     public Image teacherTable;
 
     // Datos de ejemplo para diferentes páginas
-    private string[] pageNames = { "Raúl Alberto Toledo Pi%ón", "Página 2", "Página 3" };
+    private string[] pageNames = { "Raúl Alberto Toledo Piñón", "Pilar Eduardo Sierra Muñit", "Griselda Salas Santos" };
     private string[] pageInfos = {
         "El profesor Toledo imparte materias didácticas y enfocadas a la programación, como las cuales son: Cultura Digital, Aplicación Web y Desarrollo de Aplicación Web",
-        "Contenido de la página 2.",
-        "Contenido de la página 3."
+        "El profesor Sierra imparte materias de programacion.",
+        "La profesora Salas imparte materias de fisica."
     };
 
     [SerializeField] private Sprite[] pageImages;

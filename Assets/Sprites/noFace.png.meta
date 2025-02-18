@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 08279a4a01a40e3409ddbd643a635d68
+guid: 370d99b4e8bc72c40b3c3f05bfc4ecfd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -89009088095785043
-    second: rancheritos_0
+      213: -5957070231529037482
+    second: noFace_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rancheritos_0
+      name: noFace_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 96
-        height: 128
+        x: 14
+        y: 15
+        width: 484
+        height: 483
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dafe44ab4b6c3cef0800000000000000
-      internalID: -89009088095785043
+      spriteID: 65168a3bf2c345da0800000000000000
+      internalID: -5957070231529037482
       vertices: []
       indices: 
       edges: []
@@ -147,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      rancheritos_0: -89009088095785043
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
