@@ -11,6 +11,10 @@ public class LoginManager : MonoBehaviour
     public Button registerButton;
     public TextMeshProUGUI feedbackText;
 
+    private string guestUsername = "Invitado";
+    private string guestPassword = "1234";
+
+
     private void Start()
     {
         feedbackText.text = "";
@@ -43,6 +47,20 @@ public class LoginManager : MonoBehaviour
             return;
         }
 
+        // Verificar si es la cuenta de invitado
+        if (username == guestUsername && password == guestPassword)
+        {
+            feedbackText.text = "Inicio de sesión como invitado exitoso. Redirigiendo...";
+
+            // Guardar la sesión del usuario
+            PlayerPrefs.SetString("ActiveUser", guestUsername);
+
+            // Redirigir a la escena principal
+            SceneManager.LoadScene("Map");
+            return;
+        }
+
+        // Verificar si el usuario existe en PlayerPrefs
         if (PlayerPrefs.HasKey(username) && PlayerPrefs.GetString(username) == password)
         {
             feedbackText.text = "Inicio de sesión exitoso. Redirigiendo...";
