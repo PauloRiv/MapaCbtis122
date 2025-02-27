@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LabBiologia.unity
     guid: c0891027be3588f488a740cca543643d
+  - enabled: 1
+    path: Assets/Scenes/EdificioC.unity
+    guid: a34d300570508064781696b7f7ab28ad
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: e26b5047501a35f41983af6549eff1c2, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d3bcade158d03a145a16c52355ee3545, type: 2}
