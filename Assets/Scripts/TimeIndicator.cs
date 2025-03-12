@@ -1,51 +1,59 @@
 using UnityEngine;
+using TMPro;
 using System;
 using System.Collections.Generic;
 
 [Serializable]
-public class TimeSprite
+public class TimeText
 {
     public int startHour;
     public int startMinute;
     public int endHour;
     public int endMinute;
-    public Sprite sprite;
+    public string grupo; // Texto a mostrar
+    public string profe;
+    public List<DayOfWeek> allowedDays = new List<DayOfWeek>(); // Días en los que se activa
 }
 
 public class TimeIndicator : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
-    public List<TimeSprite> timeSprites = new List<TimeSprite>();
-    public Sprite defaultSprite;
+    public TextMeshPro Grupo;
+    public TextMeshPro Profe;
+    public List<TimeText> timeTexts = new List<TimeText>();
+    public string defaultText = "Texto por defecto"; // Texto si no hay coincidencias
 
     void Start()
     {
-        UpdateSprite();
-        InvokeRepeating(nameof(UpdateSprite), 60, 60);
+        UpdateText();
+        InvokeRepeating(nameof(UpdateText), 60, 60); // Se actualiza cada minuto
     }
 
-    void UpdateSprite()
+    void UpdateText()
     {
         int currentHour = DateTime.Now.Hour;
         int currentMinute = DateTime.Now.Minute;
+        DayOfWeek currentDay = DateTime.Now.DayOfWeek;
 
-        foreach (var timeSprite in timeSprites)
+        foreach (var timeText in timeTexts)
         {
-            if (IsWithinTimeRange(currentHour, currentMinute, timeSprite))
+            if (IsWithinTimeRange(currentHour, currentMinute, timeText) && timeText.allowedDays.Contains(currentDay))
             {
-                spriteRenderer.sprite = timeSprite.sprite;
+                Grupo.text = timeText.grupo;
+                Profe.text = timeText.profe;
                 return;
             }
         }
 
-        spriteRenderer.sprite = defaultSprite;
+        // Si no encuentra coincidencias, usa el texto predeterminado
+        Grupo.text = defaultText;
+        Profe.text = defaultText;
     }
 
-    bool IsWithinTimeRange(int hour, int minute, TimeSprite timeSprite)
+    bool IsWithinTimeRange(int hour, int minute, TimeText timeText)
     {
         TimeSpan currentTime = new TimeSpan(hour, minute, 0);
-        TimeSpan startTime = new TimeSpan(timeSprite.startHour, timeSprite.startMinute, 0);
-        TimeSpan endTime = new TimeSpan(timeSprite.endHour, timeSprite.endMinute, 0);
+        TimeSpan startTime = new TimeSpan(timeText.startHour, timeText.startMinute, 0);
+        TimeSpan endTime = new TimeSpan(timeText.endHour, timeText.endMinute, 0);
 
         return currentTime >= startTime && currentTime < endTime;
     }
